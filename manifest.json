@@ -1,0 +1,35 @@
+{
+  "name": "messenger soundfix  🎶🎶 ",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "messenger soundfix",
+    "default_icon": {
+      "16": "icons/favicon16.png",
+    "32": "icons/favicon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/favicon16.png",
+    "32": "icons/favicon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [{ 
+    "resources":[ "*.mp3" ],
+  "matches": ["<all_urls>"]
+}],
+  "description": "მესენჯერის ხმა უფრო თსლ გავხადე <3",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.messenger.com/*"
+        
+      ],
+      "js": ["script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
