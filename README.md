@@ -1,7 +1,10 @@
 
 ### მესენჯერს კარგი ხმა აქვს
 ---
-<audio src="aah.mp3" controls style="max-width:100% !important "></audio>
+<audio controls="controls">
+  <source type="audio/mp3" src="aah.mp3"></source>
+</audio>
+
 -----
 
 ### დაყენების ინსტრუქცია
