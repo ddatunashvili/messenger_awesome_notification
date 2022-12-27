@@ -1,8 +1,8 @@
 window.addEventListener("DOMNodeInserted", (event) => {
+  console.log(event.target);
     try {
     const hasClass = event.target.getAttribute("aria-label") == "Mark as read";
-    const hasClassge = event.target.getAttribute("aria-label") == "წაკითხულად მონიშვნა";
-    if (hasClass || hasClassge){
+    if (hasClass) {
       var myAudio = new Audio(chrome.runtime.getURL("aah.mp3"));
       myAudio.volume = 0.1;
       myAudio.play();
